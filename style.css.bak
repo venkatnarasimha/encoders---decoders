@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin :0;
+}
+html body{
+    background-color: lightcyan;
+}
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    padding-top: 10px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float:left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline:none;
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    padding: 14px 16px;
+    font-weight: bold;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color : blue;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.text-area-input {
+    display: block;
+    border-radius: 4px;
+    border-color: #00d1b2;
+    font-weight: bold;
+    font-size: 30px;
+    width: 500px;
+    height: 150px;
+}
+
+.text-area-output {
+    display: block;
+    border-radius: 4px;
+    border-color: #00d1b2;
+    font-weight: bold;
+    font-size: 30px;
+    width: 500px;
+    height: 150px;
+}
+.center {
+	display: block;
+	overflow: hidden;
+	padding-left: 350px;
+  margin-right: auto;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.fieldset {
+    width: 500px;
+    background-color: #f0eedc;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+ hr {
+     color:grey;
+
+}
+
+.label {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(114, 56, 56);
+  }
+.button {
+    padding: 10px 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color:#00d1b2;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    opacity: 0.6;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.button:hover{
+  opacity: 1;
+}
+
+footer {
+padding: 3px;
+background-color: rgb(2, 1, 1);
+text-align: center;
+color:white;
+}
