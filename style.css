@@ -32,7 +32,8 @@ html body {
 }
 
 .dropdown {
-  float: left;
+  float: right;
+  padding-right: 40px;
   overflow: hidden;
 }
 
