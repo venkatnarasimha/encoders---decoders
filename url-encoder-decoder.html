@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>Base64 Encoder</title>
+   <title>URL Encoder Decoder</title>
     <link rel="StyleSheet" href="style.css">
-
-    <script src="./string.js" defer></script>
-</head>
+    <script src="./encoder.js" defer></script>
 <body>
     <div class="navbar">
         <a href="index.html">Home</a>
@@ -26,26 +24,27 @@
               </div>
         </div>
     </div>
-
     <section class="wrapper">
         <form action="">
             <fieldset class="fieldset"> 
-                <legend class="label">Base64 Encoder</legend>
+                <legend class="label">Encoder/Decoder : </legend>
             <!-- <div class="main">
                 <span class="heading">Base64 Decode</span>
             </div> -->
-            <label class="label">Enter the text to Base64 Encode</label>
-            <p><textarea class="text-area-input" focus rows="10" cols="60"></textarea></p>
+            <label class="label">Enter the url : </label>
+            <p><textarea class="text-area-input" focus rows="10" cols="60" placeholder="eg: https://www.google.com/"></textarea></p>
     
-            <p><button type="button" class="but button">Base64 Encode</button>
-            <input type="reset" value="Reset" class="but">
+            <p><button type="button" class="but encoder">Encode</button>
+                <button type="button" class="but decoder">Decode</button>
+                <input type="reset" value="Reset" class="but">
+                <button type="button" class="but copy">Copy</button>
             </p>
-            <label class="label">The Base64 Encoded: </label>
+            <label class="label">The Result String : </label>
             <p><textarea class="text-area-output" focus rows="10" cols="60" readonly></textarea></p>
-            <p>
+            <!-- <p>
             <button type="button" class="but copy">Copy</button>
-            <a href="base64decode.html" class="but">Swap</a>
-            </p>
+            <a href="Base64Decode.html" class="but">Swap</a>
+            </p> -->
             </fieldset>
         </form>
     </section>
@@ -57,6 +56,7 @@
         <span class="footer-copyright-divider">|</span>
         <span class="footer-copyright-arr"> NO COPYRIGHTS</span>
     </footer>
+    
     
 </body>
 </html>

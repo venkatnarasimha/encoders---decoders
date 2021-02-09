@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>SHA-256 Hashing</title>
+   <title>SHA-512 Hashing</title>
     <link rel="StyleSheet" href="style.css">
 </head>
 <body>
@@ -11,47 +11,56 @@
         <a href="index.html">Home</a>
         <div class="dropdown">
             <button class="dropbtn">Encoders & Decoders
-                <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="urlEncoderDecoder.html">Url Encoder/Decoder</a>
-                <a href="Base64Encode.html">Base64 Encoder</a>
-                <a href="Base64Decode.html">Base64 Decoder</a>
-                <a href="MD5HashGenerator.html">MD-5 Hash Generator</a>
-                <a href="SHA1HashGenerator.html">SHA-1 Hash Generator</a>
-                <a href="SHA256HashGenerator.html">SHA-256 Hash Generator</a>
-                <a href="SHA512HashGenerator.html">SHA-512 Hash Generator</a>
+                <a href="url-encoder-decoder.html">Url Encoder/Decoder</a>
+                <a href="base64encode.html">Base64 Encoder</a>
+                <a href="base64decode.html">Base64 Decoder</a>
+                <a href="md-5hashgenerator.html">MD-5 Hash Generator</a>
+                <a href="sha-1hashgenerator.html">SHA-1 Hash Generator</a>
+                <a href="sha-256hashgenerator.html">SHA-256 Hash Generator</a>
+                <a href="sha-512hashgenerator.html">SHA-512 Hash Generator</a>
  
               </div>
         </div>
     </div>
-
-    <section class="center">
+     
+    <section class="wrapper">
         <form action="">
             <fieldset class="fieldset"> 
-                <legend class="label">SHA-256 Hashing</legend>
-            <div class="main">
-                <span class="heading">SHA-256 Hashing</span>
-            </div>
-            <br >
-            <p><label class="label">Enter the String for Hashing</label></p>
+                <legend class="label">SHA-512 Hashing : </legend>
+            <!-- <div class="main">
+                <span class="heading">Base64 Decode</span>
+            </div> -->
+            <label class="label">Enter the String for Hashing : </label>
+            <p><textarea class="text-area-input" focus rows="10" cols="60" placeholder="Enter the String"></textarea></p>
     
-            <p><textarea class="text-area-input" focus rows="10" cols="70"></textarea></p>
-    
-            <p><button type="button" class="but button">Convert</button>
-                <input type="reset" value="Reset" class="button">
-                <button type="button" class="button copy">Copy</button>
+            <p><button type="button" class="but encoder">Convert</button>
+                <input type="reset" value="Reset" class="but">
+                <button type="button" class="but copy">Copy</button>
             </p>
-            <p><label class="label">The Decoded String : </label></p>
-            <p><textarea class="text-area-output" focus rows="10" cols="70"></textarea></p>
-            </fieldset>    
+            <label class="label">The Decoded String : </label>
+            <p><textarea class="text-area-output" focus rows="10" cols="60" readonly></textarea></p>
+            <!-- <p>
+            <button type="button" class="but copy">Copy</button>
+            <a href="Base64Decode.html" class="but">Swap</a>
+            </p> -->
+            </fieldset>
         </form>
     </section>
+    <div class=above-footer>
+
+    </div>
+    <footer class="footer">
+        <span class="footer-copyright-wat">© UTILITY APPLICATIONS</span>
+        <span class="footer-copyright-divider">|</span>
+        <span class="footer-copyright-arr"> NO COPYRIGHTS</span>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
     <script>
         function hashing(url)
         {
-        const str = CryptoJS.SHA256(url);
+        const str = CryptoJS.SHA512(url);
             return str.toString(CryptoJS.enc.Hex);
         }
         const inputValue=document.querySelector('.text-area-input');
